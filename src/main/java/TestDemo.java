@@ -1,3 +1,4 @@
+import java.util.Random;
 
 public class TestDemo {
     
@@ -7,6 +8,16 @@ public class TestDemo {
         } else {
             return a + b;
         }
+    }
+    
+    public int randomNumberSquared() {
+        int a = getRandomInt();
+        return a*a;            
+    }
+
+    int getRandomInt() {
+        Random random = new Random();
+        return random.nextInt(10) + 1;
     }
 
 }
